@@ -7,11 +7,8 @@ const Navbar = () => {
     <>
       <nav className="main-nav">
         {/* Logo part */}
-        <div className="logo">
-          <h2>
-            <span>R</span>SB
-            <span>T</span>ech
-          </h2>
+        <div className="logo" >
+          <a href="https://ramakant-bawane.netlify.app/"><img src="/logo.png" width="100" height="100"></img></a>
         </div>
 
         {/* menu link part */}
