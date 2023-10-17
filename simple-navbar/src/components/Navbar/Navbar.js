@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import {BsFacebook, BsInstagram, BsYoutube} from "react-icons/bs";
+import {GiHamburgerMenu} from "react-icons/gi"
 import "./Navbar.css";
 
 const Navbar = () => {
+  const[showMediaIcons, setShowMediaIcons] = useState(false);
   return (
     <>
       <nav className="main-nav">
@@ -13,7 +15,7 @@ const Navbar = () => {
 
         {/* menu link part */}
 
-        <div className="menu-link">
+        <div className={showMediaIcons ? "menu-link mobile-menu-link": "menu-link"}>
           <ul>
             <li>
               <a href="https://ramakant-bawane.netlify.app/">Home</a>
@@ -42,6 +44,14 @@ const Navbar = () => {
               <a className= "youtube" href="https://ramakant-bawane.netlify.app/" target ="_blank" rel="noreferrer"><BsYoutube/></a>
             </li>
           </ul>
+
+          {/* Hammburger menu */}
+        <div className="hamburger-menu">
+            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+              <GiHamburgerMenu/>
+            </a>
+          </div>
+          
         </div>
       </nav>
       
