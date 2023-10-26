@@ -7,6 +7,10 @@
   font-family: "jost", sans-serif;
 }
 
+.main-nav {
+  background-color: rgba(252, 252, 252, 0.479);
+}
+
 html {
   font-size: 62.5%;
 }
